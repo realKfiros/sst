@@ -1,0 +1,17 @@
+{
+  "name": "stt",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "realKfiros",
+  "license": "MIT",
+  "scripts": {
+    "dev": "concurrently \"cd server && python3 app.py\" \"yarn workspace client dev\""
+  },
+  "workspaces": [
+    "client"
+  ],
+  "packageManager": "yarn@4.3.1",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
